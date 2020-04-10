@@ -10,21 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>blogs-web</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
-
-        <dependency>
-            <groupId>com.whiteroad</groupId>
-            <artifactId>blogs-api</artifactId>
-            <version>${app.version}</version>
-        </dependency>
         <dependency>
             <groupId>com.whiteroad</groupId>
             <artifactId>blogs-impl</artifactId>
-            <version>${app.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
+
+    <build>
+        <finalName>blogs-web</finalName>
+    </build>
 
 
 </project>

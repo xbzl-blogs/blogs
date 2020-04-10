@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.whiteroad</groupId>
             <artifactId>blogs-api</artifactId>
-            <version>${app.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

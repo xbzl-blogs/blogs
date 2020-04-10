@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <description>Spring公共配置</description>
+
+    <!-- 允许文件上传并设置文件最大大小 -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760" />
+    </bean>
+
+    <!--提供@Value("${jdbc.url}")支持 -->
+    <context:property-placeholder ignore-unresolvable="true" location="classpath*:/application.properties" />
+
+    <!-- 使用annotation 自动注册bean, 并保证@Required、@Autowired的属性被注入 -->
+    <context:component-scan base-package="com.whiteroad">
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller" />
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+    </context:component-scan>
+
+    <!-- Jpa Entity Manager 配置 -->
+    <bean id="entityManagerFactory"
+          class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="packagesToScan">
+            <array>
+                <value>com.whiteroad</value>
+            </array>
+        </property>
+        <property name="jpaProperties">
+            <props>
+                <!-- 命名规则 My_NAME->MyName -->
+                <prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+                <!-- hibernate二级缓存 -->
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory
+                </prop>
+                <prop key="javax.persistence.sharedCache.mode">ENABLE_SELECTIVE</prop>
+                <prop key="hibernate.generate_statistics">false</prop>
+                <prop key="hibernate.cache.use_second_level_cache">false</prop>
+                <prop key="hibernate.cache.use_query_cache">false</prop>
+                <prop key="hibernate.cache.provider_configuration">classpath:ehcache/ehcache.xml</prop>
+                <prop key="hibernate.hbm2ddl.auto">none</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+
+
+</beans>
