@@ -21,6 +21,16 @@ public class PasswordVo extends SuperMainVO {
 
     private String pswUserId;
 
+    private String pswPassword;
+
+    public String getPswPassword() {
+        return pswPassword;
+    }
+
+    public void setPswPassword(String pswPassword) {
+        this.pswPassword = pswPassword;
+    }
+
     public String getId() {
         return id;
     }

@@ -24,7 +24,7 @@ import java.util.List;
 public class PasswordServiceImpl implements PasswordService {
 
     @Autowired
-    private PasswordDao dao;
+    private PasswordDao passwordDao;
 
     @Override
     public List<PasswordVo> insertInit() {
@@ -40,7 +40,7 @@ public class PasswordServiceImpl implements PasswordService {
 
         List<PasswordEntity> passwordEntities = new ArrayList<>();
         for (PasswordEntity entity : pwsEntityList){
-            PasswordEntity save = (PasswordEntity) dao.save(entity);
+            PasswordEntity save = (PasswordEntity) passwordDao.save(entity);
             passwordEntities.add(save);
         }
         for (PasswordEntity entity : passwordEntities){
