@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdab86f6-2e12-420d-a2d8-8ceeb9ae42b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blogs-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/blogs-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs-web/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blogs-web/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bdab86f6-2e12-420d-a2d8-8ceeb9ae42b4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/blogs-api/target/" />
@@ -41,38 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
-              <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blogs-web/src/main/resources/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
-              <caret line="126" column="66" selection-start-line="126" selection-start-column="66" selection-end-line="126" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogs-web/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="268">
+              <caret line="114" column="52" lean-forward="true" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -102,6 +71,7 @@
       <find>org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter</find>
       <find>jack</find>
       <find>dataSource</find>
+      <find>javassist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,12 +129,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="blogs-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -192,47 +157,6 @@
             <path>
               <item name="blogs" type="58d84e3e:PackageViewProjectNode" />
               <item name="blogs-web" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="blogs.waterfallElements" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="blogs.waterfallElements" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="entity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -310,6 +234,97 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vo" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-api" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.whiteroad" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-impl" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.whiteroad.blogs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="blogs" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="blogs-web" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src/main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WEB-INF" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,7 +344,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.14781402" />
-    <property name="project.structure.side.proportion" value="0.17356321" />
+    <property name="project.structure.side.proportion" value="0.16693811" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
@@ -508,17 +523,18 @@
       <workItem from="1586509113751" duration="1013000" />
       <workItem from="1586510133505" duration="341000" />
       <workItem from="1586510481552" duration="224000" />
+      <workItem from="1586655596354" duration="360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16458000" />
+    <option name="totallyTimeSpent" value="16818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -528,7 +544,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34983853" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34983853" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +563,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info active="true" anchor="right" id="Maven" order="5" visible="true" weight="0.14978679" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.14978679" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -636,40 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallElements/vo/waterfallElementsVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/utils/JsonBackData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/utils/JsonBackData.java" />
     <entry file="file://$PROJECT_DIR$/../globs_construction/com/fasterxml/jackson/core/jackson-databind/2.1.0/jackson-databind-2.1.0.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallElements/controller/waterfallElementsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../globs_construction/com/alibaba/druid/1.0.20/druid-1.0.20.pom">
@@ -677,38 +663,173 @@
         <state relative-caret-position="-456" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/controller/PasswordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1767">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+        <state relative-caret-position="209">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallElements/entity/waterfallElementsEntity.java">
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/entity/PasswordEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/entity/PasswordRecordEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/service/impl/PasswordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/service/PasswordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/utils/PasswordDataUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/vo/PasswordRecordVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/password/vo/PasswordVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallelements/controller/WaterfallElementsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallelements/entity/WaterfallElementsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/resources/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/blogs-impl/src/main/java/com/whiteroad/blogs/waterfallelements/vo/WaterfallElementsVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="30" column="55" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="55" />
+        <state relative-caret-position="114">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/entity/SuperEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="157" column="21" selection-start-line="157" selection-start-column="21" selection-end-line="157" selection-end-column="21" />
+        <state relative-caret-position="209">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/entity/SuperMainEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/entity/SuperSubEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/vo/SuperMainVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/vo/SuperSubVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/vo/SuperVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/database/JsonBackData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-api/src/main/java/com/whiteroad/utils/WhiteroadShaMessageDigest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blogs-web/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
+        <state relative-caret-position="536">
           <caret line="126" column="66" selection-start-line="126" selection-start-column="66" selection-end-line="126" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogs-web/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -719,17 +840,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="114" column="52" lean-forward="true" selection-start-line="114" selection-start-column="52" selection-end-line="114" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>blogs-web</last-edited>
+          <last-edited>blogs-web:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
                 <option value="0.5" />
               </list>
             </option>
@@ -753,7 +881,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
               </list>
             </option>
           </splitter-proportions>
@@ -764,7 +892,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
               </list>
             </option>
           </splitter-proportions>
@@ -776,7 +904,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
               </list>
             </option>
           </splitter-proportions>
@@ -784,11 +912,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>blogs-impl</last-edited>
+          <last-edited>blogs-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
               </list>
             </option>
           </splitter-proportions>
@@ -812,7 +940,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.17356321" />
+                <option value="0.16693811" />
               </list>
             </option>
           </splitter-proportions>
