@@ -1,4 +1,4 @@
-package com.whiteroad.utils;
+package com.whiteroad.database;
 
 /**
  * @author Da
