@@ -12,5 +12,9 @@ import java.util.List;
  */
 public interface PasswordService {
 
+    /**
+     * 初始化数据，使用默认信息进行初始化管理员账户密码
+     * @return 初始化结果集
+     */
     List<PasswordVo> insertInit();
 }
