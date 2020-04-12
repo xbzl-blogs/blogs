@@ -9,3 +9,7 @@
 out/
 
 *.iml
+
+blogs-web/target/
+
+blogs-impl/target/
