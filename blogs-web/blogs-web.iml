@@ -26,6 +26,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="blogs-impl" />
     <orderEntry type="module" module-name="blogs-api" />
+    <orderEntry type="library" name="Maven: com.thetransactioncompany:cors-filter:1.7.1" level="project" />
+    <orderEntry type="library" name="Maven: com.thetransactioncompany:java-property-utils:1.9" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3.3" level="project" />
