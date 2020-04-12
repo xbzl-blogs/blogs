@@ -1,12 +1,10 @@
-package com.whiteroad.blogs.waterfallElements.entity;
-
+package com.whiteroad.blogs.waterfallelements.vo;
 
 /**
  * @author Da
- * @date 2020/4/10 13:45
- * 文章实体类
+ * @date 2020/4/10 13:51
  */
-public class waterfallElementsEntity {
+public class WaterfallElementsVo {
 
     private String id;
     private String name;

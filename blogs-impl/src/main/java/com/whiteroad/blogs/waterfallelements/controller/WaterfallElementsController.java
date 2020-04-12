@@ -1,9 +1,8 @@
-package com.whiteroad.blogs.waterfallElements.controller;
+package com.whiteroad.blogs.waterfallelements.controller;
 
-import com.whiteroad.blogs.waterfallElements.vo.waterfallElementsVO;
-import com.whiteroad.utils.JsonBackData;
+import com.whiteroad.blogs.waterfallelements.vo.WaterfallElementsVo;
+import com.whiteroad.database.JsonBackData;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -17,7 +16,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping(value = "waterfallElementsController")
-public class waterfallElementsController {
+public class WaterfallElementsController {
 
 
 
@@ -27,8 +26,8 @@ public class waterfallElementsController {
     public JsonBackData queryList() {
         JsonBackData back = new JsonBackData();
         try {
-            List<waterfallElementsVO> page = new ArrayList<>();
-            waterfallElementsVO vo1 = new waterfallElementsVO();
+            List<WaterfallElementsVo> page = new ArrayList<>();
+            WaterfallElementsVo vo1 = new WaterfallElementsVo();
             vo1.setId("1");
             vo1.setName("新闻1");
             vo1.setValue("Java Persistence API定义了一种定义，可以将常规的普通Java对象（有时被称作POJO）映射到数据库。\n" +
@@ -38,7 +37,7 @@ public class waterfallElementsController {
                     "\n" +
                     "Java Persistence API还定义了一种查询语言（JPQL），具有与SQL相类似的特征，只不过做了裁减，以便处理Java对象而非原始的关系表。");
 
-            waterfallElementsVO vo2 = new waterfallElementsVO();
+            WaterfallElementsVo vo2 = new WaterfallElementsVo();
             vo2.setId("2");
             vo2.setName("新闻2");
             vo2.setValue("@Column注释定义了将成员属性映射到关系表中的哪一列和该列的结构信息，属性如下：\n" +
