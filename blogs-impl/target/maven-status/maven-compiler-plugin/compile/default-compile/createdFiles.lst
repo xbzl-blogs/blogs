@@ -1,0 +1,12 @@
+com\whiteroad\blogs\password\utils\PasswordDataUtils.class
+com\whiteroad\blogs\password\vo\PasswordVo.class
+com\whiteroad\blogs\waterfallelements\controller\WaterfallElementsController.class
+com\whiteroad\blogs\waterfallelements\vo\WaterfallElementsVo.class
+com\whiteroad\blogs\password\vo\PasswordRecordVo.class
+com\whiteroad\blogs\waterfallelements\entity\WaterfallElementsEntity.class
+com\whiteroad\blogs\password\controller\PasswordController.class
+com\whiteroad\blogs\password\entity\PasswordRecordEntity.class
+com\whiteroad\blogs\password\service\PasswordService.class
+com\whiteroad\blogs\password\repository\PasswordDao.class
+com\whiteroad\blogs\password\entity\PasswordEntity.class
+com\whiteroad\blogs\password\service\impl\PasswordServiceImpl.class

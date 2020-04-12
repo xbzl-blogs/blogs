@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/blogs.iml" filepath="$PROJECT_DIR$/blogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/blogs-api/blogs-api.iml" filepath="$PROJECT_DIR$/blogs-api/blogs-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/blogs-impl/blogs-impl.iml" filepath="$PROJECT_DIR$/blogs-impl/blogs-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogs-web/blogs-web.iml" filepath="$PROJECT_DIR$/blogs-web/blogs-web.iml" />
     </modules>
   </component>
 </project>

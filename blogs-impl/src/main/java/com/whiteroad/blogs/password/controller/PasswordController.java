@@ -3,6 +3,8 @@ package com.whiteroad.blogs.password.controller;
 import com.whiteroad.blogs.password.service.PasswordService;
 import com.whiteroad.blogs.password.vo.PasswordVo;
 import com.whiteroad.database.JsonBackData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,6 +39,7 @@ public class PasswordController {
         } catch (Exception e) {
             back.setSuccess(false);
             back.setBackMsg("初始化失败:"+e.getMessage());
+            e.printStackTrace();
         }
         return back;
     }

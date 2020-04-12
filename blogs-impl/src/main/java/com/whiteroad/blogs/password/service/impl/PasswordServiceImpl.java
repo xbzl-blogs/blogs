@@ -1,11 +1,16 @@
 package com.whiteroad.blogs.password.service.impl;
 
 import com.whiteroad.blogs.password.entity.PasswordEntity;
+import com.whiteroad.blogs.password.repository.PasswordDao;
 import com.whiteroad.blogs.password.service.PasswordService;
+import com.whiteroad.blogs.password.utils.PasswordDataUtils;
 import com.whiteroad.blogs.password.vo.PasswordVo;
 import com.whiteroad.utils.WhiteroadShaMessageDigest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +23,8 @@ import java.util.List;
 @Transactional
 public class PasswordServiceImpl implements PasswordService {
 
-//    @Autowired
-//    private PasswordDao dao;
+    @Autowired
+    private PasswordDao dao;
 
     @Override
     public List<PasswordVo> insertInit() {
@@ -31,12 +36,18 @@ public class PasswordServiceImpl implements PasswordService {
         byte[] shaCiphertext = WhiteroadShaMessageDigest.getShaCiphertext("ZhangDa112587");
         pwsEntity.setPswCiphertext(shaCiphertext);
         pwsEntityList.add(pwsEntity);
-//        Iterable<PasswordEntity> passwordEntities = dao.saveAll(pwsEntityList);
-//        for (PasswordEntity entity : passwordEntities){
-//            PasswordVo vo = new PasswordVo();
-//            PasswordDataUtils.copyEntityToVO(entity,vo);
-//            backVos.add(vo);
-//        }
+
+
+        List<PasswordEntity> passwordEntities = new ArrayList<>();
+        for (PasswordEntity entity : pwsEntityList){
+            PasswordEntity save = (PasswordEntity) dao.save(entity);
+            passwordEntities.add(save);
+        }
+        for (PasswordEntity entity : passwordEntities){
+            PasswordVo vo = new PasswordVo();
+            PasswordDataUtils.copyEntityToVO(entity,vo);
+            backVos.add(vo);
+        }
         return backVos;
     }
 }

@@ -1,0 +1,8 @@
+com\whiteroad\database\entity\SuperEntity.class
+com\whiteroad\utils\WhiteroadShaMessageDigest.class
+com\whiteroad\database\JsonBackData.class
+com\whiteroad\database\vo\SuperVO.class
+com\whiteroad\database\entity\SuperSubEntity.class
+com\whiteroad\database\entity\SuperMainEntity.class
+com\whiteroad\database\vo\SuperMainVO.class
+com\whiteroad\database\vo\SuperSubVO.class
