@@ -97,7 +97,7 @@
                 <prop key="hibernate.cache.use_second_level_cache">false</prop>
                 <prop key="hibernate.cache.use_query_cache">false</prop>
                 <prop key="hibernate.cache.provider_configuration">classpath:ehcache/ehcache.xml</prop>
-                <prop key="hibernate.hbm2ddl.auto">none</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
             </props>
         </property>
     </bean>
@@ -112,7 +112,7 @@
         </property>
     </bean>
 
-    <!-- Spring Data Jpa配置 -->
+    <!-- Spring database Jpa配置 -->
     <jpa:repositories base-package="com.whiteroad"
                       transaction-manager-ref="transactionManager"
                       entity-manager-factory-ref="entityManagerFactory" />
