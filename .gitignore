@@ -13,3 +13,5 @@ out/
 blogs-web/target/
 
 blogs-impl/target/
+
+blogs-api/target/
