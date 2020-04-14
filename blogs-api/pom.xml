@@ -11,5 +11,12 @@
 
     <artifactId>blogs-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+    </dependencies>
 
 </project>
