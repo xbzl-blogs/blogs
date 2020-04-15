@@ -1,59 +1,42 @@
-package com.whiteroad.blogs.image.entity;
+package com.whiteroad.blogs.image.vo;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.whiteroad.blogs.article.entity.ArticleEntity;
-import com.whiteroad.database.entity.SuperMainEntity;
-import org.hibernate.annotations.GenericGenerator;
+import com.whiteroad.database.vo.SuperMainVO;
 
-import javax.persistence.*;
 
 /**
  * @author Da
- * @date 2020/4/15 11:22
- * 图片库实体类
- * 用于存储所有图片库内的图片的物理存储位置
+ * @date 2020/4/15 11:37
+ * 图片库vo
  */
-@Entity
-@Table(name = "image")
-public class ImageEntity extends SuperMainEntity {
+public class ImageVo extends SuperMainVO {
 
-    @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name = "system-uuid", strategy = "uuid")
-    @Column(name = "id", unique = true, nullable = false, length = 32)
     private String id;
 
     /**
      * 物理路径
      */
-    @Column(name = "path")
     private String path;
-
-    /**
-     * 图片名称
-     */
-    @Column(name = "name")
-    private String name;
-
-    /**
-     * 图片类型
-     */
-    @Column(name = "type")
-    private String type;
 
     /**
      * 图片信息，备注之类的
      */
-    @Column(name = "message")
     private String message;
 
     /**
      * 图片所属
      */
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name = "parentid", insertable = false, updatable = false)
     private ArticleEntity parent;
+
+    /**
+     * 图片名称
+     */
+    private String name;
+
+    /**
+     * 图片类型
+     */
+    private String type;
 
     private String parentid;
 
