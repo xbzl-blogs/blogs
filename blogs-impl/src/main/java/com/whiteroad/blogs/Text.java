@@ -12,7 +12,7 @@ public class Text {
     public static void main(String[] args) {
         ArticleEntity entity = new ArticleEntity();
 
-        entity.setArticleType(ArticleTypeEnum.IMAGE);
+        entity.setArticleType(ArticleTypeEnum.STANDARD);
         System.out.println(entity.getArticleType());
     }
 }

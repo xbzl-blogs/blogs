@@ -31,4 +31,9 @@ public class ImageController {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 图片存储规则：
+     * 文章id/图片名称
+     */
 }

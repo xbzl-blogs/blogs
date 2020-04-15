@@ -25,7 +25,7 @@ public class ArticleVo extends SuperMainVO {
     /**
      * 文章类型
      */
-    private int articleType = ArticleTypeEnum.IMAGE;
+    private int articleType = ArticleTypeEnum.STANDARD;
 
     /**
      * 文章发布时间
@@ -37,6 +37,11 @@ public class ArticleVo extends SuperMainVO {
      * 文章发布签名
      */
     private String articleUserName;
+
+    /**
+     * 文章封面
+     */
+    private String articleCover;
 
     /**
      * 内容标题
@@ -146,5 +151,13 @@ public class ArticleVo extends SuperMainVO {
 
     public void setContents(List<ArticleContentVo> contents) {
         this.contents = contents;
+    }
+
+    public String getArticleCover() {
+        return articleCover;
+    }
+
+    public void setArticleCover(String articleCover) {
+        this.articleCover = articleCover;
     }
 }

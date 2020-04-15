@@ -27,7 +27,7 @@ public class ArticleEntity extends SuperMainEntity {
      * 文章类型
      */
     @Column(name = "article_type")
-    private int articleType = ArticleTypeEnum.IMAGE;
+    private int articleType = ArticleTypeEnum.STANDARD;
 
     /**
      * 文章发布时间
@@ -40,6 +40,14 @@ public class ArticleEntity extends SuperMainEntity {
      */
     @Column(name = "article_user_name")
     private String articleUserName;
+
+    /**
+     * 文章封面
+     * 根据文章类型articleType值存储不同数据
+     * IMAGE ： 图片地址
+     */
+    @Column(name = "article_cover")
+    private String articleCover;
 
     /**
      * 内容标题
@@ -155,5 +163,13 @@ public class ArticleEntity extends SuperMainEntity {
 
     public void setContents(List<ArticleContentEntity> contents) {
         this.contents = contents;
+    }
+
+    public String getArticleCover() {
+        return articleCover;
+    }
+
+    public void setArticleCover(String articleCover) {
+        this.articleCover = articleCover;
     }
 }
