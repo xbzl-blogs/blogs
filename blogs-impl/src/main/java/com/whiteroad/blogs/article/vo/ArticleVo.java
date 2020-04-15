@@ -1,5 +1,6 @@
 package com.whiteroad.blogs.article.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.whiteroad.blogs.article.entity.ArticleContentEntity;
 import com.whiteroad.blogs.article.entity.ArticleTypeEnum;
 import com.whiteroad.database.vo.SuperMainVO;
@@ -24,6 +25,7 @@ public class ArticleVo extends SuperMainVO {
     private int articleType = ArticleTypeEnum.IMAGE;
 
     //文章发布时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date articleTime;
 
     //文章发布签名
