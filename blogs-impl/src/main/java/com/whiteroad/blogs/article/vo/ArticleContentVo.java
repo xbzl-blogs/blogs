@@ -21,13 +21,19 @@ public class ArticleContentVo extends SuperSubVO {
 
     private String parentid;
 
-    //内容类型
+    /**
+     * 内容类型
+     */
     private int type = ContentTypeEnum.TEXT;
 
-    //内容
+    /**
+     * 内容
+     */
     private String content;
 
-    //排序
+    /**
+     * 排序
+     */
     private int sort;
 
     public String getId() {

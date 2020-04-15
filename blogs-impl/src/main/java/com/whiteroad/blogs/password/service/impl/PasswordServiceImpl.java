@@ -20,7 +20,7 @@ import java.util.List;
  * 管理员密码Service实现类
  */
 @Service
-@Transactional
+@Transactional(rollbackFor=Exception.class)
 public class PasswordServiceImpl implements PasswordService {
 
     @Autowired

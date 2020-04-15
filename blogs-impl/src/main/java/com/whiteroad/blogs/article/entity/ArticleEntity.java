@@ -23,39 +23,57 @@ public class ArticleEntity extends SuperMainEntity {
     @Column(name = "id", unique = true, nullable = false, length = 32)
     private String id;
 
-    //文章类型
+    /**
+     * 文章类型
+     */
     @Column(name = "article_type")
     private int articleType = ArticleTypeEnum.IMAGE;
 
-    //文章发布时间
+    /**
+     * 文章发布时间
+     */
     @Column(name = "article_time")
     private Date articleTime;
 
-    //文章发布签名
+    /**
+     * 文章发布签名
+     */
     @Column(name = "article_user_name")
     private String articleUserName;
 
-    //内容标题
+    /**
+     * 内容标题
+     */
     @Column(name = "content_tilte")
     private String contentTitle;
 
-    //内容副标题
+    /**
+     * 内容副标题
+     */
     @Column(name = "content_subhead")
     private String contentSubhead;
 
-    //内容标签
+    /**
+     * 内容标签
+     */
     @Column(name = "content_tags")
     private String contentTags;
 
-    //内容分类
+    /**
+     * 内容分类
+     */
     @Column(name = "content_catefory")
     private String contentCategory;
 
-    //内容简介
+    /**
+     * 内容简介
+     */
     @Column(name = "content_intro")
     private String contentIntro;
 
-    //内容子表
+    /**
+     * 内容子表
+     */
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "parent")
     private List<ArticleContentEntity> contents = new ArrayList<ArticleContentEntity>();
 

@@ -22,31 +22,50 @@ public class ArticleVo extends SuperMainVO {
     private String id;
 
     //文章类型
+    /**
+     * 文章类型
+     */
     private int articleType = ArticleTypeEnum.IMAGE;
 
-    //文章发布时间
+    /**
+     * 文章发布时间
+     */
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date articleTime;
 
-    //文章发布签名
+    /**
+     * 文章发布签名
+     */
     private String articleUserName;
 
-    //内容标题
+    /**
+     * 内容标题
+     */
     private String contentTitle;
 
-    //内容副标题
+    /**
+     * 内容副标题
+     */
     private String contentSubhead;
 
-    //内容标签
+    /**
+     * 内容标签
+     */
     private String contentTags;
 
-    //内容分类
+    /**
+     * 内容分类
+     */
     private String contentCategory;
 
-    //内容简介
+    /**
+     * 内容简介
+     */
     private String contentIntro;
 
-    //内容子表
+    /**
+     * 内容子表
+     */
     private List<ArticleContentVo> contents = new ArrayList<ArticleContentVo>();
 
     public String getId() {

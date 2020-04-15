@@ -29,15 +29,21 @@ public class ArticleContentEntity extends SuperSubEntity {
     @Column(name = "parentid")
     private String parentid;
 
-    //内容类型
+    /**
+     * 内容类型
+     */
     @Column(name = "type")
     private int type = ContentTypeEnum.TEXT;
 
-    //内容
+    /**
+     * 内容
+     */
     @Column(name = "content")
     private String content;
 
-    //排序
+    /**
+     * 排序
+     */
     @Column(name = "sort")
     private int sort;
 

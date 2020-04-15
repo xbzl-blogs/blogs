@@ -6,8 +6,12 @@ package com.whiteroad.blogs.article.entity;
  * 文章类型
  */
 public class ArticleTypeEnum {
-    //图片类型
+    /**
+     * 图片类型
+     */
     public static final int IMAGE = 1;
-    //文字类型
+    /**
+     * 文字类型
+     */
     public static final int TEXT = 2;
 }

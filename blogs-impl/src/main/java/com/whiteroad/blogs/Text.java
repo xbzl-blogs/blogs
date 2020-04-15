@@ -7,7 +7,7 @@ import com.whiteroad.blogs.article.entity.ArticleTypeEnum;
  * @author Da
  * @date 2020/4/14 14:56
  */
-public class test {
+public class Text {
 
     public static void main(String[] args) {
         ArticleEntity entity = new ArticleEntity();
