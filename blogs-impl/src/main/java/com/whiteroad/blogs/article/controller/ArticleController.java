@@ -3,8 +3,10 @@ package com.whiteroad.blogs.article.controller;
 import com.whiteroad.blogs.article.service.ArticleQueryService;
 import com.whiteroad.blogs.article.vo.ArticleVo;
 import com.whiteroad.database.JsonBackData;
+import com.whiteroad.database.query.QuerySchema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -25,10 +27,10 @@ public class ArticleController {
 
     @RequestMapping(value = "queryList")
     @ResponseBody
-    public JsonBackData queryList(){
+    public JsonBackData queryList(@RequestBody(required = false) QuerySchema querySchema){
         JsonBackData back = new JsonBackData();
         try {
-            List<ArticleVo> backVO = articleService.queryList();
+            List<ArticleVo> backVO = articleService.queryList(querySchema);
             back.setBackData(backVO);
             back.setBackMsg("查询成功");
         } catch (Exception e) {

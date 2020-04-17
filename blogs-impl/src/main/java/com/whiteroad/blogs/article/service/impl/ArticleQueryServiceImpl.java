@@ -5,7 +5,10 @@ import com.whiteroad.blogs.article.repository.ArticleDao;
 import com.whiteroad.blogs.article.service.ArticleQueryService;
 import com.whiteroad.blogs.article.utils.ArticleDataUtils;
 import com.whiteroad.blogs.article.vo.ArticleVo;
+import com.whiteroad.database.query.QuerySchema;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -23,9 +26,10 @@ public class ArticleQueryServiceImpl implements ArticleQueryService {
     private ArticleDao articleDao;
 
     @Override
-    public List<ArticleVo> queryList() {
+    public List<ArticleVo> queryList(QuerySchema querySchema) {
         List<ArticleVo> backVos = new ArrayList<>();
-        List<ArticleEntity> articleEntities = articleDao.queryAllArticle();
+        Pageable pageable = new PageRequest(querySchema.getPageNumber(),querySchema.getPageSize());
+        List<ArticleEntity> articleEntities = articleDao.queryAllArticle(pageable);
         for (ArticleEntity entity : articleEntities){
             ArticleVo vo = new ArticleVo();
             ArticleDataUtils.copyEntityToVO(entity,vo);
