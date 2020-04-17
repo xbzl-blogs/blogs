@@ -7,10 +7,13 @@ import com.whiteroad.blogs.article.utils.ArticleDataUtils;
 import com.whiteroad.blogs.article.vo.ArticleVo;
 import com.whiteroad.database.query.QuerySchema;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +29,7 @@ public class ArticleQueryServiceImpl implements ArticleQueryService {
     private ArticleDao articleDao;
 
     @Override
-    public List<ArticleVo> queryList(QuerySchema querySchema) {
+    public Page<ArticleVo> queryList(QuerySchema querySchema) {
         List<ArticleVo> backVos = new ArrayList<>();
         Pageable pageable = new PageRequest(querySchema.getPageNumber(),querySchema.getPageSize());
         List<ArticleEntity> articleEntities = articleDao.queryAllArticle(pageable);
@@ -35,6 +38,9 @@ public class ArticleQueryServiceImpl implements ArticleQueryService {
             ArticleDataUtils.copyEntityToVO(entity,vo);
             backVos.add(vo);
         }
-        return backVos;
+        BigInteger bigInteger = articleDao.queryCount();
+        Page<ArticleVo> backPage = new PageImpl<ArticleVo>(backVos,pageable,bigInteger.longValue());
+
+        return backPage;
     }
 }

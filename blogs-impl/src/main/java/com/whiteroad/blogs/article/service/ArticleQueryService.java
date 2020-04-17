@@ -2,6 +2,7 @@ package com.whiteroad.blogs.article.service;
 
 import com.whiteroad.blogs.article.vo.ArticleVo;
 import com.whiteroad.database.query.QuerySchema;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 
@@ -14,8 +15,8 @@ public interface ArticleQueryService {
 
     /**
      * 查询全部文章
-     * @return 文章集
+     * @return 文章分页集
      * @param querySchema 查询参数
      */
-    List<ArticleVo> queryList(QuerySchema querySchema);
+    Page<ArticleVo> queryList(QuerySchema querySchema);
 }

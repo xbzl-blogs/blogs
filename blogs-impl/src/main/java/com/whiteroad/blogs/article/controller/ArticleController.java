@@ -5,6 +5,7 @@ import com.whiteroad.blogs.article.vo.ArticleVo;
 import com.whiteroad.database.JsonBackData;
 import com.whiteroad.database.query.QuerySchema;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,7 +31,7 @@ public class ArticleController {
     public JsonBackData queryList(@RequestBody(required = false) QuerySchema querySchema){
         JsonBackData back = new JsonBackData();
         try {
-            List<ArticleVo> backVO = articleService.queryList(querySchema);
+            Page<ArticleVo> backVO = articleService.queryList(querySchema);
             back.setBackData(backVO);
             back.setBackMsg("查询成功");
         } catch (Exception e) {

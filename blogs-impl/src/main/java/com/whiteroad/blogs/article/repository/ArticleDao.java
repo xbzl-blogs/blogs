@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -24,4 +25,11 @@ public interface ArticleDao
      */
     @Query("SELECT a FROM ArticleEntity a WHERE a.dr = 0 ")
     List<ArticleEntity> queryAllArticle(Pageable pageable);
+
+    /**
+     * 查询总数
+     * @return
+     */
+    @Query("SELECT count(a) FROM ArticleEntity a WHERE a.dr = 0 ")
+    BigInteger queryCount();
 }
