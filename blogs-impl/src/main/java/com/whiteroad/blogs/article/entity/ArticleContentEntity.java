@@ -31,12 +31,17 @@ public class ArticleContentEntity extends SuperSubEntity {
 
     /**
      * 内容类型
+     * 4、5分类只有一个
      */
     @Column(name = "type")
     private int type = ContentTypeEnum.TEXT;
 
     /**
      * 内容
+     * 如果是图片IMAGE类型内容或者封面媒体MEDIA类型，则存储图片或视频地址
+     * 如果是标题HEADER类型内容，则存储以'<header/>'为间隔符则内容，顺序为标题、作者、时间、内容分类(','逗号分隔,最多两个)
+     * 如果是引用BLOCKQUOTE类型内容，则存储以'<blockquote/>'为间隔符分割内容，顺序为内容、作者或者时间或者地点或者书名
+     * 如果是标签TAGS类型内容，则存储以'<a/>'为间隔符分割的内容
      */
     @Column(name = "content")
     private String content;
